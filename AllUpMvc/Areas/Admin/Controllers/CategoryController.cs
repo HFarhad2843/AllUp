@@ -1,0 +1,114 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using AllUpMVC.Business.Interfaces;
+using AllUpMVC.CustomExceptions.Common;
+using AllUpMVC.CustomExceptions.CategoryExceptions;
+using AllUpMVC.Models;
+
+namespace AllUpMVC.Areas.Admin.Controllers
+{
+    [Area("admin")]
+    public class CategoryController : Controller
+    {
+        private readonly ICategoryService _CategoryService;
+
+        public CategoryController(ICategoryService CategoryService)
+        {
+            _CategoryService = CategoryService;
+        }
+
+        public async Task<IActionResult> Index()
+            => View(await _CategoryService.GetAllAsync(x=>x.IsDeleted == false && x.Name == "Sci-Fi","Products"));
+
+        public IActionResult Create()
+            => View();
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Category Category)
+        {
+            if (!ModelState.IsValid) return View();
+
+            try
+            {
+                await _CategoryService.CreateAsync(Category);
+            }
+            catch (NameAlreadyExistException ex)
+            {
+                ModelState.AddModelError(ex.PropertyName, ex.Message);
+                return View();
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return View();
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Update(int id)
+        {
+            Category Category = null;
+            try
+            {
+                Category = await _CategoryService.GetByIdAsync(id);
+            }
+            catch (CategoryNotFoundException ex)
+            {
+                return View("Error");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return View(Category);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(Category Category)
+        {
+            if (!ModelState.IsValid) return View();
+
+            try
+            {
+                await _CategoryService.UpdateAsync(Category);
+            }
+            catch (NameAlreadyExistException ex)
+            {
+                ModelState.AddModelError(ex.PropertyName, ex.Message);
+                return View();
+            }
+            catch (CategoryNotFoundException ex)
+            {
+                return View("Error");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return View();
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                await _CategoryService.DeleteAsync(id);
+            }
+            catch (CategoryNotFoundException)
+            {
+                return NotFound();
+            }
+            catch (Exception)
+            {
+                return NotFound();
+            }
+            return Ok();
+        }
+             
+    }
+}
