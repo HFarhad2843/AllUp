@@ -35,7 +35,7 @@ namespace AllUpMVC.Controllers
         {
            
 
-            return Ok(); //200
+            return Ok(); 
         }
 
         public IActionResult GetBasketItems()

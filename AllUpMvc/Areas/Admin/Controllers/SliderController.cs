@@ -30,7 +30,7 @@ namespace AllUpMVC.Areas.Admin.Controllers
         public async Task<IActionResult> Create(Slider slider)
         {
             if(!ModelState.IsValid) return View();
-            // Image Content Type
+          
             if(slider.ImageFile is not null)
             {
                 if (slider.ImageFile.ContentType != "image/jpeg" && slider.ImageFile.ContentType != "image/png")
@@ -39,7 +39,6 @@ namespace AllUpMVC.Areas.Admin.Controllers
                     return View();
                 }
 
-                // Image size
                 if (slider.ImageFile.Length > 2097152)
                 {
                     ModelState.AddModelError("ImageFile", "Size must be lower than 2mb!");

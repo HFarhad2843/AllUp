@@ -13,4 +13,9 @@ public class AllUpDbContext : IdentityDbContext<AppUser>
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categorys { get; set; }
     public DbSet<ProductImage> ProductImages { get; set; }
+    public DbSet<AppUser> users { get; set; }
+    public DbSet<Basketitem> BasketItems { get; set; }
+
+
+
 }

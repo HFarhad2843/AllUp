@@ -5,7 +5,7 @@ using AllUpMVC.Models;
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
-
+    
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AllUpDbContext>(opt =>
 {

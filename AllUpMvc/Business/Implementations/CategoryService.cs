@@ -35,15 +35,15 @@ namespace AllUpMVC.Business.Implementations
             await _context.SaveChangesAsync();
         }
 
-        public async Task<List<Category>> GetAllAsync(Expression<Func<Category, bool>>? expression = null, params string[] includes) // isdeleted = false
+        public async Task<List<Category>> GetAllAsync(Expression<Func<Category, bool>>? expression = null, params string[] includes) 
         {
-            var query = _context.Categorys.AsQueryable(); // Select * from Categorys
+            var query = _context.Categorys.AsQueryable();
 
             query = _getIncludes(query, includes);
 
             return expression is not null 
-                    ? await query.Where(expression).ToListAsync()  // Select * From Categorys Where EXPRESSION
-                    : await query.ToListAsync(); // SELECT * FROM Categorys
+                    ? await query.Where(expression).ToListAsync()  
+                    : await query.ToListAsync(); 
         }
 
         public async Task<Category> GetByIdAsync(int id)
