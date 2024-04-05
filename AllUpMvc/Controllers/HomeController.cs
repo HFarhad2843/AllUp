@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using AllUpMVC.Business.Interfaces;
 using AllUpMVC.Data;
 using AllUpMVC.ViewModels;
+using AllUpMVC.Models;
 
 namespace AllUpMVC.Controllers;
 
@@ -28,10 +29,12 @@ public class HomeController : Controller
     {
         HomeViewModel homeVM = new HomeViewModel()
         {
-       
-           Categories = await _CategoryService.GetAllAsync(x=>x.IsDeleted == false),
-           Sliders= await _SliderService.GetAllAsync(x=>x.IsDeleted==false) 
-        };
+            Categories = await _CategoryService.GetAllAsync(x => x.IsDeleted == false),
+            Sliders = await _SliderService.GetAllAsync(x => x.IsDeleted == false),
+            BestSellerProducts = await _ProductService.GetAllAsync(x => x.IsDeleted == false && x.IsBestProduct==true),
+            FeaturedProducts = await _ProductService.GetAllAsync(x => x.IsDeleted == false && x.IsFeatured==true),
+            NewProducts =await _ProductService.GetAllAsync(x=>x.IsDeleted == false && x.IsNew==true),
+         };
          return View(homeVM);
      
     }

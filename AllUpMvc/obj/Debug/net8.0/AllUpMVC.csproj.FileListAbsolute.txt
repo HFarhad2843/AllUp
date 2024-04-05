@@ -772,3 +772,4 @@ C:\Users\Pc\Desktop\AllUpMvc\AllUpMVC\obj\Debug\net8.0\refint\AllUpMVC.dll
 C:\Users\Pc\Desktop\AllUpMvc\AllUpMVC\obj\Debug\net8.0\AllUpMVC.pdb
 C:\Users\Pc\Desktop\AllUpMvc\AllUpMVC\obj\Debug\net8.0\AllUpMVC.genruntimeconfig.cache
 C:\Users\Pc\Desktop\AllUpMvc\AllUpMVC\obj\Debug\net8.0\ref\AllUpMVC.dll
+C:\Users\Pc\Desktop\AllUpMvc\AllUpMVC\obj\Debug\net8.0\AllUpMVC.sourcelink.json

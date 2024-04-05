@@ -6,14 +6,10 @@ namespace AllUpMVC.Models
 {
     public class Product : BaseEntity
     {
-        public int ProductId { get; set; }
-
         [StringLength(50)]
         public string Title { get; set; }
         [StringLength(350)]
         public string Desc { get; set; }
-       // public int? AuthorId { get; set; }
-
         public int? CategoryId { get; set; }
         public Category? Category { get; set; }
 
