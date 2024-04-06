@@ -10,7 +10,7 @@ using AllUpMVC.Models;
 namespace AllUpMVC.Areas.Admin.Controllers
 {
     [Area("admin")]
-    [Authorize]
+   // [Authorize]
     public class ProductController : Controller
     {
         private readonly AllUpDbContext _context;
@@ -29,7 +29,7 @@ namespace AllUpMVC.Areas.Admin.Controllers
             _CategoryService = CategoryService;
         }
         public async Task<IActionResult> Index()
-            => View(await _ProductService.GetAllAsync(null,"Author","Category","ProductImages"));
+            => View(await _ProductService.GetAllAsync(null,"Category","ProductImages"));
 
         public async Task<IActionResult> Create()
         {
@@ -69,7 +69,7 @@ namespace AllUpMVC.Areas.Admin.Controllers
             Product? Product = null;
             try
             {
-                Product = await _ProductService.GetSingleAsync(x=>x.Id == id, "Author","Category","ProductImages");
+                Product = await _ProductService.GetSingleAsync(x=>x.Id == id,"Category","ProductImages");
             }
             catch (Exception)
             {

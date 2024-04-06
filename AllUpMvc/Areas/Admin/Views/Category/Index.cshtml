@@ -26,6 +26,11 @@
                     <td>@item.Name</td>
                     <td>@item.Products.Count</td>
                     <td>
+                    <td>
+                        <img style="width:150px" src="~/uploads/categorys/@item.CategoryImage" />
+                    </td>
+                    </td>
+                    <td>
                         <a asp-action="update" asp-controller="Category" asp-route-id="@item.Id" class="btn btn-warning">Update</a>
                         <a asp-action="delete" asp-controller="Category" asp-route-id="@item.Id" class="btn btn-danger delete-btn">Delete</a>
                     </td>

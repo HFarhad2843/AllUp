@@ -15,7 +15,6 @@
                 <th scope="col">Title</th>
                 <th scope="col">Desc</th>
                 <th scope="col">Category Name</th>
-                <th scope="col">Author Name</th>
                 <th scope="col">Image</th>
                 <th scope="col">Actions</th>
             </tr>
@@ -29,8 +28,7 @@
                     <td>@item.Title</td>
                     <td>@item.Desc</td>
                     <td>@item.Category.Name</td>
-@*                     <td>@item.Category</td>
- *@                    <td>
+                  <td>
                         <img style="width:150px" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" />
                     </td>
                     <td>

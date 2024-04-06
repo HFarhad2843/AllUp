@@ -28,7 +28,7 @@ namespace AllUpMVC.Controllers
 
         public async Task<IActionResult> Detail(int id) 
         {
-            var Product = await _ProductService.GetSingleAsync(x=>x.Id == id,"ProductImages","Category","Author");
+            var Product = await _ProductService.GetSingleAsync(x=>x.Id == id,"ProductImages","Category");
             return View(Product);
         }
         public async Task<IActionResult> AddToBasket(int ProductId)

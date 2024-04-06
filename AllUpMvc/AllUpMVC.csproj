@@ -20,7 +20,8 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="wwwroot\uploads\books\" />
+    <Folder Include="wwwroot\uploads\categorys\" />
+    <Folder Include="wwwroot\uploads\products\" />
     <Folder Include="wwwroot\uploads\sliders\" />
   </ItemGroup>
 

@@ -5,22 +5,41 @@ using AllUpMVC.CustomExceptions.CategoryExceptions;
 using AllUpMVC.Data;
 using AllUpMVC.Models;
 using System.Linq.Expressions;
+using AllUpMVC.CustomExceptions.ProductExceptions;
+using AllUpMVC.Extensions;
 
 namespace AllUpMVC.Business.Implementations
 {
     public class CategoryService : ICategoryService
     {
         private readonly AllUpDbContext _context;
+        private readonly IWebHostEnvironment _env;
 
-        public CategoryService(AllUpDbContext context)
+
+        public CategoryService(AllUpDbContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
 
         public async Task CreateAsync(Category Category)
         {
             if (_context.Categorys.Any(x => x.Name.ToLower() == Category.Name.ToLower()))
                 throw new NameAlreadyExistException("Name","Category name is already exist!");
+
+            if (Category.CategoryImageFile.ContentType != "image/jpeg" && Category.CategoryImageFile.ContentType != "image/png")
+            {
+                throw new CategoryInvalidCredentialException("CategoryImageFile", "Content type must be png or jpeg!");
+            }
+
+            if (Category.CategoryImageFile.Length > 2097152)
+            {
+                throw new CategoryInvalidCredentialException("CategoryImageFile", "Size must be lower than 2mb!");
+            }
+
+            Category.CategoryImage = Category.CategoryImageFile.SaveFile(_env.WebRootPath, "uploads/categorys");
+            
+
 
             await _context.Categorys.AddAsync(Category);
             await _context.SaveChangesAsync();

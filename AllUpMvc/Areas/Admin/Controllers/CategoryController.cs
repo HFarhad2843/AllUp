@@ -17,7 +17,7 @@ namespace AllUpMVC.Areas.Admin.Controllers
         }
 
         public async Task<IActionResult> Index()
-            => View(await _CategoryService.GetAllAsync(x=>x.IsDeleted == false && x.Name == "Sci-Fi","Products"));
+            => View(await _CategoryService.GetAllAsync(x=>x.IsDeleted == false,"Products"));
 
         public IActionResult Create()
             => View();
