@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using AllUpMVC.Data;
 using AllUpMVC.Models;
 using AllUpMVC.ViewModels;
+using AllUpMVC.Areas.Admin.ViewModels;
 
 namespace AllUpMVC.Controllers
 {
@@ -10,11 +11,14 @@ namespace AllUpMVC.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly AllUpDbContext _context;
+        private readonly SignInManager<AppUser> _signInManager;
 
-        public AccountController(UserManager<AppUser> userManager, AllUpDbContext context)
+        public AccountController(UserManager<AppUser> userManager, AllUpDbContext context, SignInManager<AppUser> signInManager)
         {
             _userManager = userManager;
             _context = context;
+            _signInManager = signInManager;
+
         }
 
         public IActionResult Index()
@@ -26,6 +30,36 @@ namespace AllUpMVC.Controllers
         {
             return View();
         }
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(UserLoginViewModel userVM)
+        {
+            if (!ModelState.IsValid) return View();
+            AppUser user = null;
+
+            user = await _userManager.FindByNameAsync(userVM.Username);
+
+            if (user is null)
+            {
+                ModelState.AddModelError("", "Invalid credentials!");
+                return View();
+            }
+
+            var result = await _signInManager.PasswordSignInAsync("user", userVM.Password, false, false);
+
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "Invalid credentials!");
+                return View();
+            }
+
+            return RedirectToAction("index", "home");
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(UserRegisterViewModel model)

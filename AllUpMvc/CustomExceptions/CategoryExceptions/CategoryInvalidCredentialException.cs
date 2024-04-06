@@ -1,4 +1,4 @@
-﻿namespace AllUpMVC.CustomExceptions.ProductExceptions
+﻿namespace AllUpMVC.CustomExceptions.CategoryExceptions
 {
     public class CategoryInvalidCredentialException : Exception
     {
