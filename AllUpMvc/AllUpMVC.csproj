@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Views\Shared\Components\Header\" />
     <Folder Include="wwwroot\uploads\categorys\" />
     <Folder Include="wwwroot\uploads\products\" />
     <Folder Include="wwwroot\uploads\sliders\" />

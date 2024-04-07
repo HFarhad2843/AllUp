@@ -51,9 +51,8 @@
             <span></span>
         </div>
     </div>
-    @await Html.PartialAsync("_BasketPartial")
 
-    <!--====== PRELOADER PART ENDS ======-->
+    <!--====== PRELOADER PART ENDS ======-->s
     <!--====== Header Part Start ======-->
 
     <header class="header-area header-3">
@@ -131,6 +130,7 @@
                                         <div class="search-category">
                                             <select>
                                                 <option value="0">All categories</option>
+
                                               @*   @foreach(var category in Model.Categories)
                                                 {
                                                          <option value="@category.Id">@category.Name</option>
@@ -222,8 +222,7 @@
                                     Kateqoriyalar
                                 </h4>
                                 <ul class="menu-content menu-expand">
-                                    @* @await Html.PartialAsync("_ProductSliderPartial", Model.Categories) *@
-
+                                    @await Component.InvokeAsync("Header")
 
                                   @*   @foreach(var item in Model.Categories)
                                     {
