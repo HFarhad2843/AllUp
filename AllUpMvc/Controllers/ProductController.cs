@@ -27,12 +27,19 @@ public class ProductController : Controller
         _SliderService= SliderService;  
     }
 
-    public async Task<IActionResult> Index(int page)
+    public async Task<IActionResult> Index(int page,int ? CategoryId)
     {
         ViewBag.Categorys = await _CategoryService.GetAllAsync(x => x.IsDeleted == false);
 
         var datas = _context.Products.AsQueryable();
-        datas=datas.Include(x=>x.Category).Include(x=>x.ProductImages).OrderByDescending(x => x.Id);
+        if (CategoryId != null)
+        {
+            datas = datas.Include(x => x.Category).Include(x => x.ProductImages).Where(x => x.CategoryId == CategoryId).OrderByDescending(x => x.Id);
+        }
+        else
+        {
+            datas = datas.Include(x => x.Category).Include(x => x.ProductImages).OrderByDescending(x => x.Id);
+        }
         var paginatedDatas = PaginatedList<Product>.Create(datas,2,page);
          return View(paginatedDatas);
      

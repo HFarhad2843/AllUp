@@ -773,4 +773,3 @@ C:\Users\Pc\Desktop\AllUpMvc\AllUpMVC\obj\Debug\net8.0\AllUpMVC.pdb
 C:\Users\Pc\Desktop\AllUpMvc\AllUpMVC\obj\Debug\net8.0\AllUpMVC.genruntimeconfig.cache
 C:\Users\Pc\Desktop\AllUpMvc\AllUpMVC\obj\Debug\net8.0\ref\AllUpMVC.dll
 C:\Users\Pc\Desktop\AllUpMvc\AllUpMVC\obj\Debug\net8.0\AllUpMVC.sourcelink.json
-C:\Users\Pc\Desktop\AllUpMvc\AllUpMVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout1.cshtml.rz.scp.css
