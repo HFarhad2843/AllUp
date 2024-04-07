@@ -7985,6 +7985,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\special-products\\special-products-8.jpg"
     },
     {
+      "Id": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\assets\\js\\basket.js",
+      "PackagePath": "staticwebassets\\assets\\js\\basket.js"
+    },
+    {
       "Id": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
     },

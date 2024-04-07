@@ -1,11 +1,10 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
+﻿using AllUpMVC.Business.Implementations;
 using AllUpMVC.Business.Interfaces;
 using AllUpMVC.Data;
 using AllUpMVC.Models;
 using AllUpMVC.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace AllUpMVC.Controllers
 {
@@ -13,6 +12,8 @@ namespace AllUpMVC.Controllers
     {
         private readonly IProductService _ProductService;
         private readonly AllUpDbContext _context;
+        private List<Basketitem> _basket = new List<Basketitem>();
+        private const string BasketCookieName = "Basket";
 
         public ShopController(
                 IProductService ProductService,
@@ -25,27 +26,66 @@ namespace AllUpMVC.Controllers
         {
             return View();
         }
-
-        public async Task<IActionResult> Detail(int id) 
+        public async Task<IActionResult> AddToBasket(int productId)
         {
-            var Product = await _ProductService.GetSingleAsync(x=>x.Id == id,"ProductImages","Category");
-            return View(Product);
-        }
-        public async Task<IActionResult> AddToBasket(int ProductId)
-        {
-           
+            //var book = await _ProductService.GetByIdAsync(productId);
 
-            return Ok(); 
-        }
+            //if (book is null) return NotFound();
 
+            List<BasketItemViewModel> basketItems = new List<BasketItemViewModel>();
+
+            BasketItemViewModel basketItem = null;
+
+            var basketItemsStr = HttpContext.Request.Cookies["BasketItems"];
+            if (basketItemsStr is not null)
+            {
+                basketItems = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemsStr);
+                basketItem = basketItems.FirstOrDefault(x => x.ProductId == productId);
+                if (basketItemsStr is not null)
+                {
+                    basketItems = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemsStr);
+                    basketItem=basketItems.FirstOrDefault(x => x.ProductId == productId);
+                    if (basketItem is not null)
+                    {
+                        basketItem.Count++;
+                    }
+                    else
+                    {
+                         basketItem = new BasketItemViewModel()
+                        {
+                            ProductId = productId,
+                            Count = 1
+                        };
+                        basketItems.Add(basketItem);
+                    }
+                }
+              
+                basketItems.Add(basketItem);
+            }
+            else
+            {
+                 basketItem = new BasketItemViewModel()
+                {
+                    ProductId = productId,
+                    Count = 1
+                };
+                basketItems.Add(basketItem);
+            }
+            basketItemsStr = JsonConvert.SerializeObject(basketItems);
+            HttpContext.Response.Cookies.Append("BasketItems", basketItemsStr);
+            // Redirect to action to display the basket
+            return Ok();
+        }
         public IActionResult GetBasketItems()
         {
-          
-               return Ok();
-
+            List<BasketItemViewModel> basketItems = new List<BasketItemViewModel>();
+            var basketItemsStr = HttpContext.Request.Cookies["BasketItems"];
+            if (basketItemsStr is not null)
+            {
+                basketItems = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemsStr);
+            }
+            return Ok(basketItems);
         }
-
-
 
     }
 }

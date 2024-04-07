@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W5szJLjkTdqjzAbXCakL5OVZNXc1GnRJgQK6PvRCnAI=",
+  "Hash": "JoO7cB31Y5yX15wxMs2HBr1T6U6l0qkVH4ci6KvPJBM=",
   "Source": "AllUpMVC",
   "BasePath": "_content/AllUpMVC",
   "Mode": "Default",
@@ -37958,6 +37958,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\assets\\js\\basket.js",
+      "SourceId": "AllUpMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
+      "BasePath": "_content/AllUpMVC",
+      "RelativePath": "assets/js/basket.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\basket.js"
     },
     {
       "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\assets\\js\\main.js",

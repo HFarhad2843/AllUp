@@ -1,0 +1,17 @@
+﻿@* @model List<(Product Product, int Quantity)>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Product.Name</td>
+            <td>@item.Product.Price</td>
+            <td>@item.Quantity</td>
+        </tr>
+    }
+</table> *@
