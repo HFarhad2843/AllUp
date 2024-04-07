@@ -10,6 +10,8 @@ addToBasketButtons.forEach(btn => {
             .then(response => {
                 if (response.status == 200) {
                     alert("elave olundu");
+                    location.reload();
+
                 } else {
                     throw new Error("xeta bas verdi");
                 }

@@ -26,11 +26,46 @@ namespace AllUpMVC.Controllers
         {
             return View();
         }
+        public async Task<IActionResult> RemoveFromBasket(int productId)
+        {
+            var product = await _ProductService.GetByIdAsync(productId);
+
+            if (product is null) return NotFound();
+
+            List<BasketItemViewModel> basketItems = new List<BasketItemViewModel>();
+
+            BasketItemViewModel basketItem = null;
+
+            var basketItemsStr = HttpContext.Request.Cookies["BasketItems"];
+            if (basketItemsStr is not null)
+            {
+                basketItems = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemsStr);
+                basketItem = basketItems.FirstOrDefault(x => x.ProductId == productId);
+                if (basketItemsStr is not null)
+                {
+                    basketItems = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemsStr);
+                    basketItem = basketItems.FirstOrDefault(x => x.ProductId == productId);
+                    if (basketItem is not null)
+                    {
+                        basketItems.Remove(basketItem);
+                    }
+                }
+            }
+            var settings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+            basketItemsStr = JsonConvert.SerializeObject(basketItems, settings);
+            HttpContext.Response.Cookies.Append("BasketItems", basketItemsStr);
+            // Redirect to action to display the basket
+            return Redirect("/Home/Index");
+        }
         public async Task<IActionResult> AddToBasket(int productId)
         {
-            //var book = await _ProductService.GetByIdAsync(productId);
+            var product = await _ProductService.GetByIdAsync(productId);
 
-            //if (book is null) return NotFound();
+            if (product is null) return NotFound();
+            Product existProduct = await _ProductService.GetSingleAsync(x => x.Id == productId, "ProductImages");
 
             List<BasketItemViewModel> basketItems = new List<BasketItemViewModel>();
 
@@ -53,28 +88,30 @@ namespace AllUpMVC.Controllers
                     {
                          basketItem = new BasketItemViewModel()
                         {
+                             Product =existProduct,
                             ProductId = productId,
                             Count = 1
                         };
                         basketItems.Add(basketItem);
                     }
                 }
-              
-                basketItems.Add(basketItem);
             }
             else
             {
                 basketItem = new BasketItemViewModel()
                 {
-                    Product = _context.Products.FirstOrDefault(x => x.Id == productId),
+                    Product = existProduct,
                     ProductId = productId,
                     Count = 1
                 };
                 basketItems.Add(basketItem);
             }
-            basketItemsStr = JsonConvert.SerializeObject(basketItems);
+            var settings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+            basketItemsStr = JsonConvert.SerializeObject(basketItems,settings);
             HttpContext.Response.Cookies.Append("BasketItems", basketItemsStr);
-            // Redirect to action to display the basket
             return Ok();
         }
         public IActionResult GetBasketItems()

@@ -7,7 +7,7 @@
 } *@
 
 
-@*   <div class="header-cart">
+                        <div class="header-cart">
                                     <div class="cart-btn">
                                         <a href="#">
                                             <i class="icon ion-bag"></i>
@@ -23,14 +23,17 @@
                                             <li>
                                                 <div class="single-cart-item d-flex">
                                                     <div class="cart-item-thumb">
-                                                        <a href="single-product.html"><img src="~/assets/images/product-cart/cart-1.jpg" alt="product"></a>
-                                                        <span class="product-quantity">1x</span>
+                                                        <a href="single-product.html">
+                                <img src="~/uploads/Products/@item.Product.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
+
+                                                            </a>
+                                                        <span class="product-quantity">@item.Count</span>
                                                     </div>
                                                     <div class="cart-item-content media-body">
                                                         <h5 class="product-name"><a href="single-product.html"></a></h5>
-                                                        <span class="product-price">€18.90</span>
+                                                        <span class="product-price">@item.Product.CostPrice</span>
                                                         <span class="product-color"><strong>Color:</strong> White</span>
-                                                        <a href="#" class="product-close"><i class="fal fa-times"></i></a>
+                                                        <a href="/shop/removefrombasket?productId=@item.ProductId" class="product-close"><i class="fal fa-times"></i></a>
                                                     </div>
                                                 </div>
                                             </li>
@@ -61,4 +64,4 @@
                                             <a href="checkout.html" class="main-btn">Checkout</a>
                                         </div>
                                     </div> <!-- mini cart -->
-                                </div> *@
+                                </div>

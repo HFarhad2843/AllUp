@@ -26,6 +26,12 @@ public class ProductController : Controller
         _ProductService = ProductService;
         _SliderService= SliderService;  
     }
+    public async Task<IActionResult> Detail(int productId)
+    {
+        Product product = await _ProductService.GetSingleAsync(x => x.Id == productId, "ProductImages");
+
+        return View(product);
+    }
 
     public async Task<IActionResult> Index(int page,int ? CategoryId)
     {

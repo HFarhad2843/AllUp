@@ -6,6 +6,7 @@ using AllUpMVC.CustomExceptions.ProductExceptions;
 using AllUpMVC.Data;
 using AllUpMVC.Extensions;
 using AllUpMVC.Models;
+using AllUpMVC.Business.Implementations;
 
 namespace AllUpMVC.Areas.Admin.Controllers
 {
@@ -37,7 +38,7 @@ namespace AllUpMVC.Areas.Admin.Controllers
 
             return View();
         }
-
+      
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Product Product)
