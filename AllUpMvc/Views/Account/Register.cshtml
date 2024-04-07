@@ -1,72 +1,209 @@
 ﻿@model UserRegisterViewModel
-	<div class="site-wrapper" id="top">
 
-		<section class="breadcrumb-section">
-			<h2 class="sr-only">Site Breadcrumb</h2>
-			<div class="container">
-				<div class="breadcrumb-contents">
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-							<li class="breadcrumb-item active">Login</li>
-						</ol>
-					</nav>
-				</div>
-			</div>
-		</section>
-		<!--=============================================
-		=            Login Register page content         =
-		=============================================-->
-		<main class="page-section inner-page-sec-padding-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb--30 mb-lg--0">
-						<!-- Login Form s-->
-						<form method="post">
-							<div class="login-form">
-								<h4 class="login-title">New Customer</h4>
-								<p><span class="font-weight-bold">I am a new customer</span></p>
-								<div class="row">
-									<div class="col-md-12 col-12 mb--15">
-										<label for="email">Full Name</label>
-										<input class="mb-0 form-control" asp-for="Fullname"
-											   placeholder="Enter your full name">
-											   <span asp-validation-for="Fullname" class="text-danger"></span>
-									</div>
-									<div class="col-12 mb--20">
-									<label for="email">Username</label>
-									<input class="mb-0 form-control" asp-for="Username"
-										   placeholder="Enter your full Username">
-									<span asp-validation-for="Username" class="text-danger"></span>
-									</div>
-									<div class="col-lg-6 mb--20">
-									<label for="password">Email</label>
-									<input class="mb-0 form-control" asp-for="Email"
-										   placeholder="Enter your Email">
-									<span asp-validation-for="Email" class="text-danger"></span>
-									</div>
-									<div class="col-lg-6 mb--20">
-										<label for="password">Password</label>
-									<input class="mb-0 form-control" asp-for="Password"
-										   placeholder="Enter your Password">
-									<span asp-validation-for="Password" class="text-danger"></span>
-									</div>
-								<div class="col-lg-6 mb--20">
-									<label for="password">ConfirmPassword</label>
-									<input class="mb-0 form-control" asp-for="ConfirmPassword"
-										   placeholder="Enter your ConfirmPassword">
-									<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-								</div>
-									<div class="col-md-12">
-										<button type="submit" class="btn btn-outlined">Register</button>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-					
-				</div>
-			</div>
-		</main>
-	</div>
-	
+
+
+    <!--====== Header Part Ends ======-->
+    <!--====== Breadcrumb Part Start ======-->
+
+    <div class="breadcrumb-area">
+        <div class="container-fluid custom-container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Register</li>
+                </ol>
+            </nav>
+        </div> <!-- container -->
+    </div>
+
+    <!--====== Breadcrumb Part Ends ======-->
+    <!--====== Register Part Start ======-->
+
+    <section class="register-area pt-10">
+        <div class="container-fluid custom-container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="login-register-wrapper mt-30">
+                        <h4 class="allup-title">Creat New Account</h4>
+                        <p class="mt-10">Already have an account? <a href="login.html">Log in instead!</a></p>
+              
+                        <form action="register" method="post" >
+                            <div class="single-form">
+                            <input type="text" name="Fullname" placeholder="First Name">
+                            </div>
+                            <div class="single-form">
+                            <input type="text" name="Username" placeholder="Last Name">
+                            </div>
+                            <div class="single-form">
+                            <input type="email" name="Email" placeholder="Email Address">
+                            </div>
+                            <div class="single-form">
+                                <input type="text" name="Username" placeholder="Username">
+                            </div>
+                            <div class="single-form">
+                            <input type="password" name="Password" placeholder="Password">
+                            </div>
+                            <div class="single-form">
+                            <input type="password" name="ConfirmPassword" placeholder="Confirm Password">
+                            </div>
+                            <div class="custom-checkbox mt-30">
+                                <input type="checkbox" id="account-1">
+                                <label for="account-1"></label>
+                                <p>Receive Offers From Our Partners</p>
+                            </div>
+                            <div class="custom-checkbox mt-30">
+                                <input type="checkbox" id="account-2">
+                                <label for="account-2"></label>
+                                <p>Sign Up For Our Newsletter <br> Subscribe To Our Newsletters Now And Stay Up-To-Date With New Collections, The Latest Lookbooks And Exclusive Offers..</p>
+                            </div>
+                            <div class="single-form">
+                                <button class="main-btn main-btn-2">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Register Part Ends ======-->
+    <!--====== Brand Part Start ======-->
+
+    <div class="brand-area pt-80">
+        <div class="container-fluid custom-container">
+            <div class="row brand-active">
+                <div class="col-lg-2">
+                    <div class="single-brand">
+                        <a href="#">
+                            <img src="assets/images/brand/brand-1.jpg" alt="brand">
+                        </a>
+                    </div> <!-- single brand -->
+                </div>
+                <div class="col-lg-2">
+                    <div class="single-brand">
+                        <a href="#">
+                            <img src="assets/images/brand/brand-2.jpg" alt="brand">
+                        </a>
+                    </div> <!-- single brand -->
+                </div>
+                <div class="col-lg-2">
+                    <div class="single-brand">
+                        <a href="#">
+                            <img src="assets/images/brand/brand-3.jpg" alt="brand">
+                        </a>
+                    </div> <!-- single brand -->
+                </div>
+                <div class="col-lg-2">
+                    <div class="single-brand">
+                        <a href="#">
+                            <img src="assets/images/brand/brand-4.jpg" alt="brand">
+                        </a>
+                    </div> <!-- single brand -->
+                </div>
+                <div class="col-lg-2">
+                    <div class="single-brand">
+                        <a href="#">
+                            <img src="assets/images/brand/brand-5.jpg" alt="brand">
+                        </a>
+                    </div> <!-- single brand -->
+                </div>
+                <div class="col-lg-2">
+                    <div class="single-brand">
+                        <a href="#">
+                            <img src="assets/images/brand/brand-6.jpg" alt="brand">
+                        </a>
+                    </div> <!-- single brand -->
+                </div>
+                <div class="col-lg-2">
+                    <div class="single-brand">
+                        <a href="#">
+                            <img src="assets/images/brand/brand-4.jpg" alt="brand">
+                        </a>
+                    </div> <!-- single brand -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div>
+
+    <!--====== Brand Part Ends ======-->
+    <!--====== Features Banner Part Start ======-->
+
+    <section class="features-banner-area pt-80 pb-100">
+        <div class="container-fluid custom-container">
+            <div class="features-banner-wrapper d-flex flex-wrap">
+                <div class="single-features-banner d-flex">
+                    <div class="banner-icon">
+                        <img src="assets/images/banner-icon/icon1.png" alt="Icon">
+                    </div>
+                    <div class="banner-content media-body">
+                        <h3 class="banner-title">Free Shipping</h3>
+                        <p>Free shipping on all US order</p>
+                    </div>
+                </div> <!-- single features banner -->
+                <div class="single-features-banner d-flex">
+                    <div class="banner-icon">
+                        <img src="assets/images/banner-icon/icon2.png" alt="Icon">
+                    </div>
+                    <div class="banner-content media-body">
+                        <h3 class="banner-title">Support 24/7</h3>
+                        <p>Contact us 24 hours a day</p>
+                    </div>
+                </div> <!-- single features banner -->
+                <div class="single-features-banner d-flex">
+                    <div class="banner-icon">
+                        <img src="assets/images/banner-icon/icon3.png" alt="Icon">
+                    </div>
+                    <div class="banner-content media-body">
+                        <h3 class="banner-title">100% Money Back</h3>
+                        <p>You have 30 days to Return</p>
+                    </div>
+                </div> <!-- single features banner -->
+                <div class="single-features-banner d-flex">
+                    <div class="banner-icon">
+                        <img src="assets/images/banner-icon/icon4.png" alt="Icon">
+                    </div>
+                    <div class="banner-content media-body">
+                        <h3 class="banner-title">90 Days Return</h3>
+                        <p>If goods have problems</p>
+                    </div>
+                </div> <!-- single features banner -->
+                <div class="single-features-banner d-flex">
+                    <div class="banner-icon">
+                        <img src="assets/images/banner-icon/icon5.png" alt="Icon">
+                    </div>
+                    <div class="banner-content media-body">
+                        <h3 class="banner-title">Payment Secure</h3>
+                        <p>We ensure secure payment</p>
+                    </div>
+                </div> <!-- single features banner -->
+            </div> <!-- features banner wrapper -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== Features Banner Part Ends ======-->
+    <!--====== Newsletter Part Start ======-->
+
+    <section class="newsletter-area pt-100 pb-100 bg_cover" style="background-image: url(assets/images/bg-newletter.jpg)">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-8">
+                    <div class="newsletter-content">
+                        <h2 class="newsletter-title">Subscribe our newsletter</h2>
+                        <p>allup is a powerful eCommerce HTML Template</p>
+
+                        <div class="newsletter-forn">
+                            <form action="#">
+                                <input type="text" placeholder="Your Email address">
+                                <button class="main-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div> <!-- newsletter content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== Newsletter Part Ends ======-->
+    <!--====== Footer Part Start ======-->
+
+   
