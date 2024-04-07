@@ -16,7 +16,7 @@
                         {
                             <div class="single-slider">
                                 <div class="slider-image">
-                                    <img src="~/assets/images/slider-5.jpg" alt="slider">
+                                <img src="~/uploads/sliders/@slider.ImageUrl" alt="slider">
                                 </div>
                                 <div class="slider-content-wrapper">
                                     <div class="slider-content">
@@ -128,18 +128,19 @@
                 <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
                     <div class="product-items">
                         <div class="row product-active">
+
                             @foreach (var item in Model.NewProducts)
                             {
-                                <div class="col-lg-2">
+                            <div class="col-lg-2">
 
                                 <div class="single-product mt-30">
                                     <div class="product-image">
                                         <a href="single-product.html">
-                                            <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                            <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                            <img class="first-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
+                                            <img class="second-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
                                         </a>
                                         <ul class="product-meta">
-                                            <li><a href="#"><i class="icon ion-bag"></i></a></li>
+                                            <li><a tab-index="0" href="/Shop/AddToBasket?productId=@item.Id" class="add-basket"><i class="icon ion-bag"></i></a></li>
                                             <li><a href="#"><i class="icon ion-android-favorite-outline"></i></a></li>
                                             <li><a href="#"><i class="icon ion-android-options"></i></a></li>
                                             <li><a data-toggle="modal" data-target="#productQuickModal" href="#"><i class="icon ion-android-open"></i></a></li>
@@ -159,7 +160,7 @@
                                         </div>
                                     </div>
                                 </div> <!-- single product -->
-                                </div>
+                            </div>
 
                             }
 
@@ -169,17 +170,19 @@
                 <div class="tab-pane fade" id="bestseller" role="tabpanel" aria-labelledby="bestseller-tab">
                     <div class="product-items">
                         <div class="row product-active">
+
                             @foreach(var item in Model.BestSellerProducts)
                             {
-                                <div class="col-lg-2">
+                            <div class="col-lg-2">
+
                                 <div class="single-product mt-30">
                                     <div class="product-image">
                                         <a href="single-product.html">
-                                            <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                            <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                            <img class="first-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
+                                            <img class="second-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
                                         </a>
                                         <ul class="product-meta">
-                                            <li><a href="#"><i class="icon ion-bag"></i></a></li>
+                                            <li><a tab-index="0" href="/Shop/AddToBasket?productId=@item.Id" class="add-basket"><i class="icon ion-bag"></i></a></li>
                                             <li><a href="#"><i class="icon ion-android-favorite-outline"></i></a></li>
                                             <li><a href="#"><i class="icon ion-android-options"></i></a></li>
                                             <li><a data-toggle="modal" data-target="#productQuickModal" href="#"><i class="icon ion-android-open"></i></a></li>
@@ -199,15 +202,17 @@
                                         </div>
                                     </div>
                                 </div> <!-- single product -->
-                                </div>
+                            </div>
+
                             }
-              
+
                         </div> <!-- row -->
                     </div> <!-- product items -->
                 </div>
                 <div class="tab-pane fade" id="featured" role="tabpanel" aria-labelledby="featured-tab">
                     <div class="product-items">
                         <div class="row product-active">
+
                                 @foreach(var item in Model.FeaturedProducts)
                                 {
                                 <div class="col-lg-2">
@@ -215,11 +220,11 @@
                                 <div class="single-product mt-30">
                                     <div class="product-image">
                                         <a href="single-product.html">
-                                            <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                            <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                            <img class="first-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
+                                            <img class="second-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
                                         </a>
                                         <ul class="product-meta">
-                                            <li><a href="#"><i class="icon ion-bag"></i></a></li>
+                                            <li><a tab-index="0" href="/Shop/AddToBasket?productId=@item.Id" class="add-basket"><i class="icon ion-bag"></i></a></li>
                                             <li><a href="#"><i class="icon ion-android-favorite-outline"></i></a></li>
                                             <li><a href="#"><i class="icon ion-android-options"></i></a></li>
                                             <li><a data-toggle="modal" data-target="#productQuickModal" href="#"><i class="icon ion-android-open"></i></a></li>
@@ -240,11 +245,11 @@
                                     </div>
                                 </div> <!-- single product -->
 
-                 
-                                </div>
+                            </div>
+
 
                                 }
-                          
+
                         </div> <!-- row -->
                     </div> <!-- product items -->
                 </div>
@@ -305,8 +310,8 @@
                                     <div class="single-product mt-30">
                                         <div class="product-image">
                                             <a href="single-product.html">
-                                                <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                                <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                            <img class="first-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
+                                            <img class="second-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
                                             </a>
                                             <ul class="product-meta">
                                                 <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -347,8 +352,8 @@
                                     <div class="single-product mt-30">
                                         <div class="product-image">
                                             <a href="single-product.html">
-                                                <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                                <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                            <img class="first-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
+                                            <img class="second-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
                                             </a>
                                             <ul class="product-meta">
                                                 <li><a href="#"><i class="icon ion-bag"></i></a></li>
@@ -388,8 +393,8 @@
                                     <div class="single-product mt-30">
                                         <div class="product-image">
                                             <a href="single-product.html">
-                                                <img class="first-image" src="~/assets/images/product/product-1.jpg" alt="product">
-                                                <img class="second-image" src="~/assets/images/product/product-2.jpg" alt="product">
+                                            <img class="first-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
+                                            <img class="second-image" src="~/uploads/Products/@item.ProductImages.Where(x=>x.IsPoster == true).FirstOrDefault()?.ImageUrl" alt="product">
                                             </a>
                                             <ul class="product-meta">
                                                 <li><a href="#"><i class="icon ion-bag"></i></a></li>

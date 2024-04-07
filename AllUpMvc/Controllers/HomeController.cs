@@ -31,9 +31,9 @@ public class HomeController : Controller
         {
             Categories = await _CategoryService.GetAllAsync(x => x.IsDeleted == false),
             Sliders = await _SliderService.GetAllAsync(x => x.IsDeleted == false),
-            BestSellerProducts = await _ProductService.GetAllAsync(x => x.IsDeleted == false && x.IsBestProduct==true),
-            FeaturedProducts = await _ProductService.GetAllAsync(x => x.IsDeleted == false && x.IsFeatured==true),
-            NewProducts =await _ProductService.GetAllAsync(x=>x.IsDeleted == false && x.IsNew==true),
+            BestSellerProducts = await _ProductService.GetAllAsync(x => x.IsDeleted == false && x.IsBestProduct==true, "ProductImages"),
+            FeaturedProducts = await _ProductService.GetAllAsync(x => x.IsDeleted == false && x.IsFeatured==true, "ProductImages"),
+            NewProducts =await _ProductService.GetAllAsync(x=>x.IsDeleted == false && x.IsNew==true, "ProductImages"),
          };
          return View(homeVM);
      

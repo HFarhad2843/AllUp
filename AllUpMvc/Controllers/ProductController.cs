@@ -32,7 +32,7 @@ public class ProductController : Controller
         ViewBag.Categorys = await _CategoryService.GetAllAsync(x => x.IsDeleted == false);
 
         var datas = _context.Products.AsQueryable();
-        datas=datas.Include(x=>x.Category).Include(x=>x.ProductImages);
+        datas=datas.Include(x=>x.Category).Include(x=>x.ProductImages).OrderByDescending(x => x.Id);
         var paginatedDatas = PaginatedList<Product>.Create(datas,2,page);
          return View(paginatedDatas);
      

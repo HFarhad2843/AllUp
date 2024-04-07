@@ -64,8 +64,9 @@ namespace AllUpMVC.Controllers
             }
             else
             {
-                 basketItem = new BasketItemViewModel()
+                basketItem = new BasketItemViewModel()
                 {
+                    Product = _context.Products.FirstOrDefault(x => x.Id == productId),
                     ProductId = productId,
                     Count = 1
                 };

@@ -15,7 +15,6 @@ addToBasketButtons.forEach(btn => {
                 }
             })
             .then(data => {
-                alert("elave olundu");
             })
             .catch(error => {
                 console.error("Error:", error);

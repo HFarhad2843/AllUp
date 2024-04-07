@@ -94,13 +94,14 @@ namespace AllUpMVC.Business.Implementations
             query = _getIncludes(query, includes);
 
             return expression is not null
-                        ? await query.Where(expression).ToListAsync()
-                        : await query.ToListAsync();
+                        ? await query.Where(expression).OrderByDescending(x => x.Id).ToListAsync()
+                        : await query.OrderByDescending(x => x.Id).ToListAsync();
         }
 
-        public Task<Product> GetByIdAsync(int id)
+        public async Task<Product> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var query = _context.Products.Include(x=>x.ProductImages).Where(x=>x.Id==id).AsQueryable();
+            return await query.FirstOrDefaultAsync();
         }
 
         public async Task<Product> GetSingleAsync(Expression<Func<Product, bool>>? expression = null, params string[] includes)

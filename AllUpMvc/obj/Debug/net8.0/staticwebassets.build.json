@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JoO7cB31Y5yX15wxMs2HBr1T6U6l0qkVH4ci6KvPJBM=",
+  "Hash": "0ERSVNQk/HgPm8cvGMdGdKH25Byoz4gdBzKoXwt4SSM=",
   "Source": "AllUpMVC",
   "BasePath": "_content/AllUpMVC",
   "Mode": "Default",
@@ -38188,12 +38188,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\categorys\\35213bc5-7ac3-4c93-a5f3-74fea5137229product-2.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\008a1af9-a806-43e8-887c-0fd4a94013d7product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/categorys/35213bc5-7ac3-4c93-a5f3-74fea5137229product-2.jpg",
+      "RelativePath": "uploads/products/008a1af9-a806-43e8-887c-0fd4a94013d7product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38204,15 +38204,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\categorys\\35213bc5-7ac3-4c93-a5f3-74fea5137229product-2.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\008a1af9-a806-43e8-887c-0fd4a94013d7product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\1ffdb8fc-a4f1-4479-a2d9-bcde4531d484product-4.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\03aebe66-8682-4b92-a19f-0de092292c91product-6.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/1ffdb8fc-a4f1-4479-a2d9-bcde4531d484product-4.jpg",
+      "RelativePath": "uploads/products/03aebe66-8682-4b92-a19f-0de092292c91product-6.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38223,15 +38223,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\1ffdb8fc-a4f1-4479-a2d9-bcde4531d484product-4.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\03aebe66-8682-4b92-a19f-0de092292c91product-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\22568f6b-d61c-480d-a2fb-97a79b7c7692product-3.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\0656097a-a582-4c45-85d0-ace5d2a436a0product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/22568f6b-d61c-480d-a2fb-97a79b7c7692product-3.jpg",
+      "RelativePath": "uploads/products/0656097a-a582-4c45-85d0-ace5d2a436a0product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38242,15 +38242,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\22568f6b-d61c-480d-a2fb-97a79b7c7692product-3.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\0656097a-a582-4c45-85d0-ace5d2a436a0product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\2a7cd634-b804-4e26-80ef-e73e9cdc4b0aproduct-details-2.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\069eb8e6-2563-484e-8fa4-251b2f9f4205product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/2a7cd634-b804-4e26-80ef-e73e9cdc4b0aproduct-details-2.jpg",
+      "RelativePath": "uploads/products/069eb8e6-2563-484e-8fa4-251b2f9f4205product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38261,15 +38261,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\2a7cd634-b804-4e26-80ef-e73e9cdc4b0aproduct-details-2.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\069eb8e6-2563-484e-8fa4-251b2f9f4205product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\2bed3669-6919-46e0-ad61-f9880ccba7ffproduct-5.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\214bb9cc-06e1-47f5-a020-9d5b10841b02product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/2bed3669-6919-46e0-ad61-f9880ccba7ffproduct-5.jpg",
+      "RelativePath": "uploads/products/214bb9cc-06e1-47f5-a020-9d5b10841b02product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38280,15 +38280,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\2bed3669-6919-46e0-ad61-f9880ccba7ffproduct-5.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\214bb9cc-06e1-47f5-a020-9d5b10841b02product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\3b9c28fc-ee47-410b-8051-e7bcdd6d918eproduct-details-2.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\2aa20350-a994-46bd-b737-e5e4d352511aproduct-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/3b9c28fc-ee47-410b-8051-e7bcdd6d918eproduct-details-2.jpg",
+      "RelativePath": "uploads/products/2aa20350-a994-46bd-b737-e5e4d352511aproduct-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38299,15 +38299,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\3b9c28fc-ee47-410b-8051-e7bcdd6d918eproduct-details-2.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\2aa20350-a994-46bd-b737-e5e4d352511aproduct-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\45771826-672f-4e9e-9ad9-01a6146c6508product-11.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\2f04f71d-e877-41eb-a8ae-fe65f16e8930product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/45771826-672f-4e9e-9ad9-01a6146c6508product-11.jpg",
+      "RelativePath": "uploads/products/2f04f71d-e877-41eb-a8ae-fe65f16e8930product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38318,15 +38318,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\45771826-672f-4e9e-9ad9-01a6146c6508product-11.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\2f04f71d-e877-41eb-a8ae-fe65f16e8930product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\4fd3183e-1801-4652-b9e4-71a82d021b89product-11.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\2f0fab11-2045-4014-857d-2153cafdfc92product-6.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/4fd3183e-1801-4652-b9e4-71a82d021b89product-11.jpg",
+      "RelativePath": "uploads/products/2f0fab11-2045-4014-857d-2153cafdfc92product-6.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38337,15 +38337,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\4fd3183e-1801-4652-b9e4-71a82d021b89product-11.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\2f0fab11-2045-4014-857d-2153cafdfc92product-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\518135cc-f25f-4af5-b9af-064993708a3cproduct-12.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\3c250134-535a-4656-af8e-12611bbd17d2product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/518135cc-f25f-4af5-b9af-064993708a3cproduct-12.jpg",
+      "RelativePath": "uploads/products/3c250134-535a-4656-af8e-12611bbd17d2product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38356,15 +38356,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\518135cc-f25f-4af5-b9af-064993708a3cproduct-12.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\3c250134-535a-4656-af8e-12611bbd17d2product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\52ac6c23-1ce8-4c3b-9aca-28b8ddb01d57product-details-1.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\5c91f575-c572-4312-8de0-3997749f9e41product-15.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/52ac6c23-1ce8-4c3b-9aca-28b8ddb01d57product-details-1.jpg",
+      "RelativePath": "uploads/products/5c91f575-c572-4312-8de0-3997749f9e41product-15.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38375,15 +38375,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\52ac6c23-1ce8-4c3b-9aca-28b8ddb01d57product-details-1.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\5c91f575-c572-4312-8de0-3997749f9e41product-15.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\6497c689-1e46-4eb4-b6c4-c7a3660e5d91product-details-1.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\663f86d9-0c92-4632-96f8-6575c6dd18ddproduct-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/6497c689-1e46-4eb4-b6c4-c7a3660e5d91product-details-1.jpg",
+      "RelativePath": "uploads/products/663f86d9-0c92-4632-96f8-6575c6dd18ddproduct-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38394,15 +38394,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\6497c689-1e46-4eb4-b6c4-c7a3660e5d91product-details-1.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\663f86d9-0c92-4632-96f8-6575c6dd18ddproduct-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\71099a6f-df12-4412-a449-2bbda8bc5c7aproduct-details-5.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\6dc28c2a-ead2-4f71-b8c2-f492ae8fa149product-3.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/71099a6f-df12-4412-a449-2bbda8bc5c7aproduct-details-5.jpg",
+      "RelativePath": "uploads/products/6dc28c2a-ead2-4f71-b8c2-f492ae8fa149product-3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38413,15 +38413,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\71099a6f-df12-4412-a449-2bbda8bc5c7aproduct-details-5.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\6dc28c2a-ead2-4f71-b8c2-f492ae8fa149product-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\7c4c8047-b075-40f9-acd1-b9063b442af3cart-product-1.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\6dcd50aa-954b-43b5-a97b-63bbd7942c35product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/7c4c8047-b075-40f9-acd1-b9063b442af3cart-product-1.jpg",
+      "RelativePath": "uploads/products/6dcd50aa-954b-43b5-a97b-63bbd7942c35product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38432,15 +38432,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\7c4c8047-b075-40f9-acd1-b9063b442af3cart-product-1.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\6dcd50aa-954b-43b5-a97b-63bbd7942c35product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\7f951d8d-31d9-43be-90ab-b23047391c8aproduct-7.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\72802f9d-9631-4e6b-b2bf-2af22236e170product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/7f951d8d-31d9-43be-90ab-b23047391c8aproduct-7.jpg",
+      "RelativePath": "uploads/products/72802f9d-9631-4e6b-b2bf-2af22236e170product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38451,15 +38451,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\7f951d8d-31d9-43be-90ab-b23047391c8aproduct-7.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\72802f9d-9631-4e6b-b2bf-2af22236e170product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\823627ff-ce36-4cac-9331-acc3091c419dcart-product-1 - Copy.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\72e89fea-f98c-4635-ba80-f759ddab32f9product-17.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/823627ff-ce36-4cac-9331-acc3091c419dcart-product-1 - Copy.jpg",
+      "RelativePath": "uploads/products/72e89fea-f98c-4635-ba80-f759ddab32f9product-17.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38470,15 +38470,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\823627ff-ce36-4cac-9331-acc3091c419dcart-product-1 - Copy.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\72e89fea-f98c-4635-ba80-f759ddab32f9product-17.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\84588489-0cf1-497d-ad5f-db698ca45a44product-3.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\8681711b-d8bc-4ddd-a850-d15d4d3cb00fproduct-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/84588489-0cf1-497d-ad5f-db698ca45a44product-3.jpg",
+      "RelativePath": "uploads/products/8681711b-d8bc-4ddd-a850-d15d4d3cb00fproduct-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38489,15 +38489,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\84588489-0cf1-497d-ad5f-db698ca45a44product-3.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\8681711b-d8bc-4ddd-a850-d15d4d3cb00fproduct-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\b0aed4a9-f1a9-4608-ac52-21513e4b8860product-4.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\a0b5d000-290a-44b6-adcf-510799eb8efaproduct-5.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/b0aed4a9-f1a9-4608-ac52-21513e4b8860product-4.jpg",
+      "RelativePath": "uploads/products/a0b5d000-290a-44b6-adcf-510799eb8efaproduct-5.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38508,15 +38508,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\b0aed4a9-f1a9-4608-ac52-21513e4b8860product-4.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\a0b5d000-290a-44b6-adcf-510799eb8efaproduct-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\b4e4997a-b27f-40d3-96ae-9fd63d665495product-details-2.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\ae4c160c-226f-4738-adcf-f8cb54868176product-3.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/b4e4997a-b27f-40d3-96ae-9fd63d665495product-details-2.jpg",
+      "RelativePath": "uploads/products/ae4c160c-226f-4738-adcf-f8cb54868176product-3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38527,15 +38527,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\b4e4997a-b27f-40d3-96ae-9fd63d665495product-details-2.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\ae4c160c-226f-4738-adcf-f8cb54868176product-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\c6c77b37-316b-4f3f-95ec-bad4608ad55cproduct-2.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\c18814d0-d8c9-429e-9474-0addf471cb3aproduct-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/c6c77b37-316b-4f3f-95ec-bad4608ad55cproduct-2.jpg",
+      "RelativePath": "uploads/products/c18814d0-d8c9-429e-9474-0addf471cb3aproduct-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38546,15 +38546,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\c6c77b37-316b-4f3f-95ec-bad4608ad55cproduct-2.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\c18814d0-d8c9-429e-9474-0addf471cb3aproduct-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\cb24a0fd-b00c-4134-b4b2-fcbbeeeb252aproduct-1.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\c451f1c3-a4cd-455b-ad73-798e23d73444product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/cb24a0fd-b00c-4134-b4b2-fcbbeeeb252aproduct-1.jpg",
+      "RelativePath": "uploads/products/c451f1c3-a4cd-455b-ad73-798e23d73444product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38565,15 +38565,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\cb24a0fd-b00c-4134-b4b2-fcbbeeeb252aproduct-1.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\c451f1c3-a4cd-455b-ad73-798e23d73444product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\cd37a731-ef2c-4e12-84ed-4a28f3263778product-details-5.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\d0491045-d746-43b6-8b72-2f48a21cd4daproduct-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/cd37a731-ef2c-4e12-84ed-4a28f3263778product-details-5.jpg",
+      "RelativePath": "uploads/products/d0491045-d746-43b6-8b72-2f48a21cd4daproduct-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38584,15 +38584,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\cd37a731-ef2c-4e12-84ed-4a28f3263778product-details-5.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\d0491045-d746-43b6-8b72-2f48a21cd4daproduct-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\f09a99b6-9b23-4eee-b3cf-f8e272ee80e1product-13.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\e387ff11-b876-4197-8cd4-b0f7d129ed63product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/products/f09a99b6-9b23-4eee-b3cf-f8e272ee80e1product-13.jpg",
+      "RelativePath": "uploads/products/e387ff11-b876-4197-8cd4-b0f7d129ed63product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38603,15 +38603,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\f09a99b6-9b23-4eee-b3cf-f8e272ee80e1product-13.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\e387ff11-b876-4197-8cd4-b0f7d129ed63product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\sliders\\3c53e7b1-644d-4b0c-ae6c-bc4247f1c40dproduct-1.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\e4a4095e-ca27-46df-bc03-d6374573a281product-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/sliders/3c53e7b1-644d-4b0c-ae6c-bc4247f1c40dproduct-1.jpg",
+      "RelativePath": "uploads/products/e4a4095e-ca27-46df-bc03-d6374573a281product-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38622,15 +38622,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\3c53e7b1-644d-4b0c-ae6c-bc4247f1c40dproduct-1.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\e4a4095e-ca27-46df-bc03-d6374573a281product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\sliders\\5ab6e886-e202-4676-94f7-2f67bcf24969home-4-slider-2.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\products\\fbc45670-3e40-4ff9-8bef-70fa55f6290aproduct-1.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/sliders/5ab6e886-e202-4676-94f7-2f67bcf24969home-4-slider-2.jpg",
+      "RelativePath": "uploads/products/fbc45670-3e40-4ff9-8bef-70fa55f6290aproduct-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38641,15 +38641,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\5ab6e886-e202-4676-94f7-2f67bcf24969home-4-slider-2.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\fbc45670-3e40-4ff9-8bef-70fa55f6290aproduct-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\sliders\\979b54d2-8c14-4aa8-980d-c1f3c7b994c6product-5.jpg",
+      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\sliders\\462d03f1-3af4-4e8e-a5cc-aacad7e5f1d1slider-5.jpg",
       "SourceId": "AllUpMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
       "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/sliders/979b54d2-8c14-4aa8-980d-c1f3c7b994c6product-5.jpg",
+      "RelativePath": "uploads/sliders/462d03f1-3af4-4e8e-a5cc-aacad7e5f1d1slider-5.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -38660,83 +38660,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\979b54d2-8c14-4aa8-980d-c1f3c7b994c6product-5.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\sliders\\9962bd91-7490-490f-b1e2-439270d5499dhome-4-slider-2.jpg",
-      "SourceId": "AllUpMVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
-      "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/sliders/9962bd91-7490-490f-b1e2-439270d5499dhome-4-slider-2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\9962bd91-7490-490f-b1e2-439270d5499dhome-4-slider-2.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\sliders\\ae8081cd-a4e4-46cc-b37b-04f608319d18yidasysayfaysfgysdfgufahdUFDUFADHUSFDHUSAFGUISAGUISFDGYSFDGU.jpg",
-      "SourceId": "AllUpMVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
-      "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/sliders/ae8081cd-a4e4-46cc-b37b-04f608319d18yidasysayfaysfgysdfgufahdUFDUFADHUSFDHUSAFGUISAGUISFDGYSFDGU.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\ae8081cd-a4e4-46cc-b37b-04f608319d18yidasysayfaysfgysdfgufahdUFDUFADHUSFDHUSAFGUISAGUISFDGYSFDGU.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\sliders\\c97eb221-b566-4b86-a5f2-236d2d073645yidasysayfaysfgysdfgufahdUFDUFADHUSFDHUSAFGUISAGUISFDGYSFDGU.jpg",
-      "SourceId": "AllUpMVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
-      "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/sliders/c97eb221-b566-4b86-a5f2-236d2d073645yidasysayfaysfgysdfgufahdUFDUFADHUSFDHUSAFGUISAGUISFDGYSFDGU.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\c97eb221-b566-4b86-a5f2-236d2d073645yidasysayfaysfgysdfgufahdUFDUFADHUSFDHUSAFGUISAGUISFDGYSFDGU.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\uploads\\sliders\\home-4-slider-1.jpg",
-      "SourceId": "AllUpMVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pc\\Desktop\\AllUpMvc\\AllUpMVC\\wwwroot\\",
-      "BasePath": "_content/AllUpMVC",
-      "RelativePath": "uploads/sliders/home-4-slider-1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\home-4-slider-1.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\462d03f1-3af4-4e8e-a5cc-aacad7e5f1d1slider-5.jpg"
     }
   ]
 }

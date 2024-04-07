@@ -47,7 +47,7 @@ namespace AllUpMVC.Controllers
                 return View();
             }
 
-            var result = await _signInManager.PasswordSignInAsync("Member", userVM.Password, false, false);
+            var result = await _signInManager.PasswordSignInAsync(userVM.Username, userVM.Password, false, false);
 
             if (!result.Succeeded)
             {

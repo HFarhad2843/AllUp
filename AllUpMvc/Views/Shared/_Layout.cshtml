@@ -1,4 +1,6 @@
-﻿
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -65,14 +67,26 @@
                         </div>
                         <div class="header-menu-nav">
                             <ul class="menu-nav">
-                                <li><a href="compare.html"><i class="fal fa-repeat"></i> Compare (0)</a></li>
+                                <li>
+                                    <a>
+                                        <i class="fal fa-user"></i>
+                                    @if (HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
+                                    {
+                                        @HttpContextAccessor.HttpContext.User.Identity.Name
+
+                                    }
+                                    </a>
+
+                                </li>
                                 <li><a href="wishlist.html"><i class="fal fa-heart"></i> Wishlist(0)</a></li>
                                 <li>
                                     <div class="dropdown">
                                         <button type="button" id="setting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Setting <i class="icon ion-chevron-down"></i></button>
 
                                         <ul class="dropdown-menu" aria-labelledby="setting">
-                                            <li><a href="my-account.html">My account</a></li>
+                                            <li><a href="my-account.html">My account  
+                                                    
+                                                </a></li>
                                             <li><a href="checkout.html">Checkout</a></li>
                                             <li><a href="/Account/Login">Giriş</a></li>
                                         </ul>
@@ -141,7 +155,9 @@
                                         <button><i class="icon ion-android-search"></i></button>
                                     </form>
                                 </div>
-                                <div class="header-cart">
+                                @await Component.InvokeAsync("Basket")
+
+                                @*   <div class="header-cart">
                                     <div class="cart-btn">
                                         <a href="#">
                                             <i class="icon ion-bag"></i>
@@ -205,7 +221,7 @@
                                             <a href="checkout.html" class="main-btn">Checkout</a>
                                         </div>
                                     </div> <!-- mini cart -->
-                                </div>
+                                </div> *@
                             </div> <!-- header search cart -->
                         </div>
                     </div> <!-- row -->
