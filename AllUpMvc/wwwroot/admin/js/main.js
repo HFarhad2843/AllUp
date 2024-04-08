@@ -21,8 +21,13 @@ deleteBtns.forEach(btn => {
                     .then(response => {
                         if (response.status == 200) {
                             window.location.reload(true)
-                        } else {
-                            alert("Movcud Deyil!")
+                        } else if (response.status == 400) {
+                            alert("bu kateqoriyada mehsullar var")
+
+                        }
+                        else
+                        {
+                            alert("movcud deyil")
                         }
                     })
                 

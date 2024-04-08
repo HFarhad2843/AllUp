@@ -11,6 +11,8 @@ namespace AllUpMVC.Business.Interfaces
         Task CreateAsync(Category Category);
         Task UpdateAsync(Category Category);
         Task DeleteAsync(int id);
-        Task SoftDeleteAsync(int id);   
+        Task SoftDeleteAsync(int id);
+        Task<bool> CheckChildAsync(int CategoryId);
+
     }
 }

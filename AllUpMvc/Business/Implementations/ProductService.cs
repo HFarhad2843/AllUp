@@ -5,6 +5,7 @@ using AllUpMVC.Data;
 using AllUpMVC.Extensions;
 using AllUpMVC.Models;
 using System.Linq.Expressions;
+using AllUpMVC.CustomExceptions.CategoryExceptions;
 
 namespace AllUpMVC.Business.Implementations
 {
@@ -82,9 +83,13 @@ namespace AllUpMVC.Business.Implementations
             await _context.SaveChangesAsync();
         }
 
-        public Task DeleteAsync(int id)
+        public  async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var data = await _context.Products.FindAsync(id);
+            if (data is null) throw new CategoryNotFoundException("product not found!");
+
+            _context.Remove(data);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<List<Product>> GetAllAsync(Expression<Func<Product, bool>>? expression = null, params string[] includes)

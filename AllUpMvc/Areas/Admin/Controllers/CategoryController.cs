@@ -97,7 +97,15 @@ namespace AllUpMVC.Areas.Admin.Controllers
         {
             try
             {
-                await _CategoryService.DeleteAsync(id);
+                bool status=await _CategoryService.CheckChildAsync(id);
+                if (status)
+                {
+                    await _CategoryService.DeleteAsync(id);
+                }
+                else
+                {
+                    return BadRequest();
+                }
             }
             catch (CategoryNotFoundException)
             {
@@ -109,6 +117,5 @@ namespace AllUpMVC.Areas.Admin.Controllers
             }
             return Ok();
         }
-             
     }
 }

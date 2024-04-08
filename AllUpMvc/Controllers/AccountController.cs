@@ -43,7 +43,7 @@ namespace AllUpMVC.Controllers
 
             if (user is null)
             {
-                ModelState.AddModelError("", "Invalid credentials!");
+                ModelState.AddModelError("", "istifadeci tapilmadi!");
                 return View();
             }
 
@@ -51,7 +51,7 @@ namespace AllUpMVC.Controllers
 
             if (!result.Succeeded)
             {
-                ModelState.AddModelError("", "Invalid credentials!");
+                ModelState.AddModelError("", "Melumatlar duzgun deyil!");
                 return View();
             }
 
@@ -61,7 +61,12 @@ namespace AllUpMVC.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(UserRegisterViewModel model)
         {
-            if (!ModelState.IsValid) return View();
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("ModelOnly", "Melumatlar duzgun yazilmayib");
+
+                return View(model);
+            } 
             AppUser member = new AppUser()
             {
                 Fullname = model.Fullname,
@@ -86,7 +91,7 @@ namespace AllUpMVC.Controllers
             {
                 foreach (var err in result.Errors)
                 {
-                    ModelState.AddModelError("", err.Description);
+                    ModelState.AddModelError("ModelOnly", "Melumatlar duzgun yazilmayib");
                     return View();
                 }
             }

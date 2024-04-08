@@ -63,6 +63,19 @@ namespace AllUpMVC.Areas.Admin.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                await _ProductService.DeleteAsync(id);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
 
         public async Task<IActionResult> Update(int id)
         {

@@ -19,7 +19,7 @@ namespace AllUpMVC.ViewComponents
                     ReferenceLoopHandling = ReferenceLoopHandling.Ignore
                 };
 
-                // Deserialize JSON string to list of BasketItemViewModel
+                
                 basketItems = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemsStr, settings);
             }
             return View(basketItems);

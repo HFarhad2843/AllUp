@@ -7,6 +7,7 @@ using AllUpMVC.Models;
 using System.Linq.Expressions;
 using AllUpMVC.CustomExceptions.ProductExceptions;
 using AllUpMVC.Extensions;
+using System.ComponentModel;
 
 namespace AllUpMVC.Business.Implementations
 {
@@ -50,8 +51,22 @@ namespace AllUpMVC.Business.Implementations
             var data = await _context.Categorys.FindAsync(id);
             if (data is null) throw new CategoryNotFoundException("Category not found!");
 
-            _context.Remove(data);
+            _context.Categorys.Remove(data);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<bool> CheckChildAsync(int CategoryId)
+        {
+            var data=await _context.Products.Where(x=>x.CategoryId == CategoryId).ToListAsync();
+            if (data.Count()!=0)
+            {
+                return false;
+
+            }
+            else
+            {
+                return true;
+            }
         }
 
         public async Task<List<Category>> GetAllAsync(Expression<Func<Category, bool>>? expression = null, params string[] includes) 
@@ -100,6 +115,21 @@ namespace AllUpMVC.Business.Implementations
                 throw new NameAlreadyExistException("Name", "Category name is already exist!");
 
             existData.Name = Category.Name;
+            if (Category.CategoryImageFile is not null)
+            {
+                if (Category.CategoryImageFile.ContentType != "image/jpeg" && Category.CategoryImageFile.ContentType != "image/png")
+                {
+                    throw new ProductInvalidCredentialException("CategoryImageFile", "Content type must be png or jpeg!");
+                }
+
+                if (Category.CategoryImageFile.Length > 2097152)
+                {
+                    throw new ProductInvalidCredentialException("CategoryImageFile", "Size must be lower than 2mb!");
+                }
+                existData.CategoryImage = Category.CategoryImageFile.SaveFile(_env.WebRootPath, "uploads/categorys");
+
+            }
+
             await _context.SaveChangesAsync();
         }
 
